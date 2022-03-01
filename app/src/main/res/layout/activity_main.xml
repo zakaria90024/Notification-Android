@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_title"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_title"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_title" />
+
+    <Button
+        android:id="@+id/btn_from_channelone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="from channel 1"
+        android:onClick="sendFromChannel1"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_message"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_message"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_message" />
+
+    <Button
+        android:id="@+id/btn_form_channeltwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="from channel 2"
+        android:onClick="sendFromChannel2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_from_channelone"
+        app:layout_constraintStart_toStartOf="@+id/btn_from_channelone"
+        app:layout_constraintTop_toBottomOf="@+id/btn_from_channelone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
